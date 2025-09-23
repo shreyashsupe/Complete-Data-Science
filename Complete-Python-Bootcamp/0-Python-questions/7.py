@@ -55,7 +55,7 @@ class Cart:
         return self.discount_strategy.apply_discount(amount)
 
 
-# Test
+
 cart = Cart(PercentageDiscount(10))  # 10% discount
 cart.add_item(Product("Laptop", 50000))
 cart.add_item(Product("Mouse", 1000))
