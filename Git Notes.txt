@@ -3,14 +3,20 @@ Important Questions:
 What is difference between the Centralized and Distributed Version Control?
 
 CSV and SVN are Centralized Version Control
-Git is centralized version control
+Git is distributed version control
 
-Feature	Centralized (CVCS)	Distributed (DVCS)
-Repository Location	Single central server	Every developer has a full copy
-Work Offline?	No	Yes
-Server Dependency	High (server = bottleneck)	Low (everyone has backup)
-Speed	Slower (depends on server)	Faster (local commits)
-Example Tools	SVN, CVS	Git, Mercurial
+| **No.** | **Centralized VCS (e.g., SVN, CVS)**                                          | **Distributed VCS (e.g., Git)**                                |
+| :-----: | :---------------------------------------------------------------------------- | :------------------------------------------------------------- |
+|  **1**  | Single central repository stores all versions of the code.                    | Every developer has a complete copy (clone) of the repository. |
+|  **2**  | Developers must connect to the central server to commit or view history.      | Developers can commit, branch, and view history **offline**.   |
+|  **3**  | If the central server goes down, no one can commit or access version history. | Work continues even if the central (remote) server is down.    |
+|  **4**  | Slower operations — each action requires server communication.                | Faster operations — most actions happen locally.               |
+|  **5**  | Limited backup — if central repo is lost, data may be lost.                   | Multiple backups — every local copy is a full backup.          |
+|  **6**  | Easier to control and manage permissions centrally.                           | Requires coordination between local and remote repositories.   |
+|  **7**  | Example tools: **CVS**, **Subversion (SVN)**, **Perforce**.                   | Example tools: **Git**, **Mercurial**, **Bazaar**.             |
+|  **8**  | Best for small teams or organizations with strong central control.            | Best for distributed teams and open-source collaboration.      |
+|  **9**  | Branching and merging are relatively complex.                                 | Branching and merging are fast and easy.                       |
+|  **10** | History is stored on one server.                                              | History is stored on every developer’s machine.                |
 
 
 Drawbacks of Centralized Version Control:
